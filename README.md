@@ -1,6 +1,6 @@
 # argument-impact-classification
 
-This repository mainly illustrates my reimplementation and further research on the paper "[The Role of Pragmatic and Discourse Context in Determining Argument Impact](https://arxiv.org/pdf/2004.03034.pdf)" using PyTorch. If you want to get the data set, please contact the authors by email.
+This repository mainly illustrates my reimplementation and further research on the paper "[The Role of Pragmatic and Discourse Context in Determining Argument Impact](https://arxiv.org/pdf/2004.03034.pdf)" using PyTorch. If you want to get the full data set, please contact the authors by email.
 
 ## 1. Dataset
 The dataset contains training, validation, and test data. Data are organized as 5 fields illustrated in Figure 2. The unique id is coupled with a training/validation/test example. The text is an argument. The context is a path from the root to the parent of text in the argument tree, and the stance label corresponds to the stances between two adjacent arguments in the path or the parent and the text (NULL is used to pad for the root). The impact label includes IMPACTFUL, MEDIUM IMPACT, NOT IMPACTFUL that need to be predicted. That is, this task is a 3-way classification problem evaluated by macro F1 score.
